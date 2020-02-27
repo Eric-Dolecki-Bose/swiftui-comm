@@ -9,10 +9,11 @@
 import SwiftUI
 
 class SomeView: UIView {
-    
     func foo() {
         print("foo was called.")
-        self.backgroundColor = UIColor(hue: CGFloat(drand48()), saturation: 1, brightness: 1, alpha: 1)
+        UIView.animate(withDuration: 0.5) {
+            self.backgroundColor = UIColor(hue: CGFloat(drand48()), saturation: 1, brightness: 1, alpha: 1)
+        }
     }
 }
  
