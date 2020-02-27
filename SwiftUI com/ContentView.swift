@@ -41,6 +41,7 @@ struct ContentView : View {
       VStack(alignment: .center, spacing: 24) {
         someView
             .background(Color(.lightGray))
+            .edgesIgnoringSafeArea(.all)
             .overlay (
                 Text("UIView Here.")
                 ,alignment: .center)
